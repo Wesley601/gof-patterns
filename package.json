@@ -2,6 +2,9 @@
   "name": "design-patterns",
   "module": "index.ts",
   "type": "module",
+  "dependencies": {
+    "currency.js": "^2.0.4"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
