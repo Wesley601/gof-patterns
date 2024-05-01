@@ -32,13 +32,13 @@ test("deve calcular o valor da corrida em horário de domingo a noite", () => {
 test("não deve calcular o valor da corrida se a distancia for invalida", () => {
   const segments = [{ distance: null, date: new Date("2021-03-07T23:00:00") }];
 
-  expect(() => calculateFare(segments)).toThrowError("Invalid distance");
+  expect(() => calculateFare(segments)).toThrow(new Error("Invalid distance"));
 });
 
 test("não deve calcular o valor da corrida se a data for invalida", () => {
   const segments = [{ distance: 10, date: new Date("invalid format") }];
 
-  expect(() => calculateFare(segments)).toThrowError("Invalid date");
+  expect(() => calculateFare(segments)).toThrow(new Error("Invalid date"));
 });
 
 test("o valor minimo da tarifa deve ser 10", () => {
