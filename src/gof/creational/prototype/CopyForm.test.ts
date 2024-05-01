@@ -1,7 +1,7 @@
 import { expect, test } from "bun:test";
-import { FormRepository } from "../../../src/gof/creational/prototype/FormRepository";
-import { Form } from "../../../src/gof/creational/prototype/Form";
-import { CopyForm } from "../../../src/gof/creational/prototype/CopyForm";
+import { FormRepository } from "./FormRepository";
+import { Form } from "./Form";
+import { CopyForm } from "./CopyForm";
 
 test("should copy a form", async function () {
   const formRepository = new FormRepositoryMemory();

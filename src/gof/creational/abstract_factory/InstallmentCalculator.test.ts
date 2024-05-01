@@ -2,8 +2,8 @@ import { expect, test } from "bun:test";
 import {
   PriceInstallmentCalculator,
   SACInstallmentCalculator,
-} from "../../../src/gof/abstract_factory/InstallmentCalculator";
-import { MortgageLoan } from "../../../src/gof/abstract_factory/Loan";
+} from "./InstallmentCalculator";
+import { MortgageLoan } from "./Loan";
 
 test("Deve calcular as parcelas utilizando SAC", () => {
   const installmentCalculator = new SACInstallmentCalculator();

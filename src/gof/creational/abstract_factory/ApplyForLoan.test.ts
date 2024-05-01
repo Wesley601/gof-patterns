@@ -1,8 +1,8 @@
 import { expect, test } from "bun:test";
-import { ApplyForLoan } from "../../../src/gof/abstract_factory/ApplyForLoan";
-import { GetLoan } from "../../../src/gof/abstract_factory/GetLoan";
-import { RepositoryFactoryInMemory } from "../../../src/gof/abstract_factory/RepositoryFactory";
-import { MortgageLoanFactory } from "../../../src/gof/abstract_factory/LoanFactory";
+import { ApplyForLoan } from "./ApplyForLoan";
+import { GetLoan } from "./GetLoan";
+import { RepositoryFactoryInMemory } from "./RepositoryFactory";
+import { MortgageLoanFactory } from "./LoanFactory";
 
 test("Deve solicitar um financiamento imobiliário", async function () {
   const repositoryFactory = new RepositoryFactoryInMemory();

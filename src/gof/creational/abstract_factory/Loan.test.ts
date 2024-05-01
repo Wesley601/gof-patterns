@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { CarLoan, MortgageLoan } from "../../../src/gof/abstract_factory/Loan";
+import { CarLoan, MortgageLoan } from "./Loan";
 
 test("Deve criar um financiamento imobiliario", async () => {
   const loan = MortgageLoan.create(100000, 10000, 240);
