@@ -1,5 +1,7 @@
 # design-patterns
 
+This repository contains examples of design patterns in TypeScript. The examples are based on the course [Design Patterns in TypeScript](branas.io).
+
 To install dependencies:
 
 ```bash
@@ -12,4 +14,8 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.0.16. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To test:
+
+```bash
+bun test
+```
