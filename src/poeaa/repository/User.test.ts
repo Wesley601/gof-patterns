@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { User } from "../User";
+import { User } from "./User";
 
 test("Deve criar um usuário", async () => {
   const user = new User("test", "John@Doe.com", "abc123469");

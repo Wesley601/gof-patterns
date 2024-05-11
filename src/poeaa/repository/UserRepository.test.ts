@@ -1,5 +1,5 @@
 import { afterEach, expect, test } from "bun:test";
-import { User } from "../User";
+import { User } from "./User";
 import { UserRepositoryDB } from "./UserRepository";
 
 afterEach(() => {

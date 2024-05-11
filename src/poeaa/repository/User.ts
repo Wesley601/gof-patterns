@@ -1,6 +1,6 @@
-import { Email } from "./repository/Email";
-import { Password } from "./repository/Password";
-import { Status } from "./repository/Status";
+import { Email } from "./Email";
+import { Password } from "./Password";
+import { Status } from "./Status";
 
 export class User {
   private _status: Status;
